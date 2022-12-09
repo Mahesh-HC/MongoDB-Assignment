@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017').then((res) => console.log('connected to Ticketdb')).catch((err) => console.log('err in connection'))
+mongoose.connect('mongodb://localhost:27017/Aviation').then((res) => console.log('connected to Ticketdb')).catch((err) => console.log('err in connection'))
 const bd = mongoose.Schema
 const bdSchema = new bd({
     username: String,
